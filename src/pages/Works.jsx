@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import TabbedInterfaces from '../components/TabbedInterfaces';
 
-const Home = () => {
-  const [url, setUrl] = useState("home");
+const Works = () => {
+  const [url, setUrl] = useState("works");
 
   return (
     <>
       <TabbedInterfaces url={url} />
     </>
-    );
+  );
 };
-
-export default Home;
+export default Works;
