@@ -1,9 +1,8 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { Container, Row } from "react-bootstrap";
 import { IntlProvider, FormattedMessage } from "react-intl";
 import messagesFr from "./../../translation/fr";
 import messagesEn from "./../../translation/en";
-
 import LanguageContext from "./../../LanguageContext";
 
 const messages = {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -11,7 +11,11 @@ import Works from "./pages/Works";
 import LanguageContext from "./LanguageContext";
 
 const App = () => {
-  const [local, setLocal] = useState('en');
+  const [local, setLocal] = useState(localStorage["local"] ? localStorage["local"] : "en");
+
+  useEffect(() => {
+    localStorage["local"] = local
+  }, [local])
 
   return (
     <LanguageContext.Provider value={{

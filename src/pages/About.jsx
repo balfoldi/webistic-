@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import TabbedInterfaces from '../components/TabbedInterfaces';
 
 const About = () => {
-  const [url, setUrl] = useState("about");
+  const url= ("about");
 
   return (
     <>
